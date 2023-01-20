@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: -ms-radial-gradient(
+    circle at 57% 50%,
+    rgba(103, 58, 183, 1) 0%,
+    rgba(0, 188, 212, 1) 40%,
+    rgba(238, 130, 238, 1) 100%
+  );
+
+  background: radial-gradient(
+    circle at 57% 50%,
+    rgba(103, 58, 183, 1) 0%,
+    rgba(238, 130, 238, 1) 100%
+  );
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-links :only-child {
+  padding: 0 1.5rem;
+}
+#logo {
+  margin-left: 1.8rem;
+  margin-top: 10px;
+}
+.signin-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-signin :nth-child(2) {
+  margin: 0 1rem;
+}
+.navbar-signin button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: #fff;
+}
+.navbar-links-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 60px;
+  background-color: rgb(211, 210, 210);
+  padding: 2rem;
+  right: 0;
+  border-radius: 5px;
+  text-align: end;
+  line-height: 30px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.react-icons {
+  margin-right: 1.8rem;
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  .navbar-links {
+    display: none;
+  }
+  .react-icons {
+    display: flex;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-signin {
+    display: none;
+  }
+  .react-icons {
+    display: flex;
+  }
+}

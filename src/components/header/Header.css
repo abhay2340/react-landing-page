@@ -1,0 +1,20 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left{
+  text-align: left;
+  margin-left:40vw ;
+  width: 50vw;
+  background-color: rgb(235, 135, 135);
+}
+.left h1{
+  font-size: 80px;
+}
+.right{
+  width: 50vw;
+}
+.right img{
+height: 70vh;
+}

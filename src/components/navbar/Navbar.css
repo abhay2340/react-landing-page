@@ -15,18 +15,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: -ms-radial-gradient(
-    circle at 57% 50%,
-    rgba(103, 58, 183, 1) 0%,
-    rgba(0, 188, 212, 1) 40%,
-    rgba(238, 130, 238, 1) 100%
-  );
-
-  background: radial-gradient(
-    circle at 57% 50%,
-    rgba(103, 58, 183, 1) 0%,
-    rgba(238, 130, 238, 1) 100%
-  );
 }
 .navbar-links {
   display: flex;
@@ -34,8 +22,15 @@ a {
   justify-content: center;
 }
 
-.navbar-links :only-child {
-  padding: 0 1.5rem;
+.navbar-links p {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.navbar-links p p {
+  margin-left: 2px;
+  margin-top: 6px;
+  /* background-color: rgb(95, 42, 42); */
 }
 #logo {
   margin-left: 1.8rem;
@@ -55,9 +50,10 @@ a {
   margin: 0 1rem;
 }
 .navbar-signin button {
+  font-weight: 600;
   padding: 0.5rem 1.5rem;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   background-color: #fff;
 }
 .navbar-links-toggle {
@@ -69,7 +65,7 @@ a {
   top: 60px;
   background-color: rgb(211, 210, 210);
   padding: 2rem;
-  right: 0;
+  right: 20px;
   border-radius: 5px;
   text-align: end;
   line-height: 30px;
@@ -97,4 +93,21 @@ a {
   .react-icons {
     display: flex;
   }
+
+}
+
+.company-dropdown,
+.car-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 60px;
+  background-color: rgb(77, 222, 198);
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: end;
+  line-height: 30px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }

@@ -1,0 +1,16 @@
+.App{
+  /* height: 100vh; */
+  color: aliceblue;
+  background: -ms-radial-gradient(
+    circle at 57% 50%,
+    rgba(103, 58, 183, 1) 0%,
+    rgba(0, 188, 212, 1) 40%,
+    rgb(29, 161, 181) 100%
+  );
+
+  background: radial-gradient(
+    circle at 57% 50%,
+    rgb(14, 237, 196) 00%,
+    rgb(28, 124, 172) 70%
+  );
+}
